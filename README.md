@@ -1,1 +1,1 @@
-# docker-subversion
+# Subversion for Docker (Alpine OS)
