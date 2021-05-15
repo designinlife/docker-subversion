@@ -8,7 +8,6 @@ COPY create /usr/local/bin/create
 ENV LANG "en_US.UTF-8"
 
 RUN set -xe \
-    && sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories \
     && apk add --no-cache --virtual .persistent-deps tzdata subversion bash curl \
     && echo "[general]" >> /etc/svnserve.conf \
     && echo "anon-access = none" >> /etc/svnserve.conf \
