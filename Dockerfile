@@ -1,7 +1,6 @@
 FROM alpine:3.13
 
-LABEL maintainer="Lei.Lee <web.developer.network@gmail.com>" \
-    dgame.image.organization="DGame"
+LABEL maintainer="Lei.Lee <web.developer.network@gmail.com>"
 
 COPY bootstrap.sh /usr/local/bin/bootstrap.sh
 COPY create /usr/local/bin/create
