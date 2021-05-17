@@ -26,3 +26,9 @@ services:
         hard: 65535
     restart: always
 ```
+
+### Create an new repository
+
+```bash
+docker exec -i svn create [Your Project Name]
+```
