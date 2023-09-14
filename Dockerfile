@@ -1,8 +1,7 @@
 FROM alpine:3.18
 
 LABEL maintainer="Lei.Lee <web.developer.network@gmail.com>" \
-    subversion.version="1.14.2" \
-    github.url="https://github.com/designinlife/docker-subversion"
+    subversion.version="1.14.2"
 
 COPY bootstrap.sh /usr/local/bin/bootstrap.sh
 COPY create /usr/local/bin/create
