@@ -1,6 +1,8 @@
-FROM alpine:3.13
+FROM alpine:3.18
 
-LABEL maintainer="Lei.Lee <web.developer.network@gmail.com>"
+LABEL maintainer="Lei.Lee <web.developer.network@gmail.com>" \
+    subversion.version="1.14.2" \
+    github.url="https://github.com/designinlife/docker-subversion"
 
 COPY bootstrap.sh /usr/local/bin/bootstrap.sh
 COPY create /usr/local/bin/create
@@ -19,8 +21,8 @@ RUN set -xe \
     && cd ~ \
     && rm -rf ~/*
 
-VOLUME ["/var/svn"]
+VOLUME [ "/var/svn" ]
 
 EXPOSE 3690
 
-ENTRYPOINT ["bootstrap.sh"]
+ENTRYPOINT [ "bootstrap.sh" ]

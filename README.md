@@ -12,7 +12,7 @@ services:
     container_name: svn
     hostname: svn
     network_mode: bridge
-    image: designinlife/subversion:1.0.0
+    image: designinlife/subversion:1.1.0
     ports:
       - "3690:3690"
     volumes:
